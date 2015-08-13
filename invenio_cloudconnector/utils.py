@@ -23,13 +23,12 @@ import math
 
 from flask import render_template, request, session
 from flask.helpers import url_for
-
 from flask_login import current_user
+from werkzeug.utils import import_string
 
 from invenio.base.globals import cfg
-from invenio.modules.cloudconnector.registry import fsopeners
 
-from werkzeug.utils import import_string
+from .registry import fsopeners
 
 
 def get_fsopener_module(key):

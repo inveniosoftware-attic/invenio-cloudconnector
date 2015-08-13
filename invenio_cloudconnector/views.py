@@ -21,21 +21,17 @@
 
 from __future__ import unicode_literals
 
-from flask import Blueprint, current_app, flash, make_response, redirect, \
-    render_template, request, url_for
-
+from flask import (Blueprint, current_app, flash, make_response, redirect,
+                   render_template, request, url_for)
 from flask_breadcrumbs import default_breadcrumb_root, register_breadcrumb
-
 from flask_login import login_required
-
 from flask_menu import register_menu
 
 from invenio.base.i18n import _
-from invenio.modules.cloudconnector.utils import (_build_filesystem,
-                                                  _build_page)
 
 from .config import CLOUDCONNECTOR_SERVICE_NAME_MAPPING
 from .errors import CloudRedirectUrl
+from .utils import _build_filesystem, _build_page
 
 blueprint = Blueprint('cloudutils', __name__, url_prefix="/cloud",
                       template_folder='templates', static_folder='static')

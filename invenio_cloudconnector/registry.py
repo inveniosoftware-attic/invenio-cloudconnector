@@ -19,12 +19,12 @@
 
 """Implement a registry for cloud services."""
 
-from flask_registry import RegistryProxy, ImportPathRegistry
+from flask_registry import ImportPathRegistry, RegistryProxy
 
 from invenio.ext.registry import ModuleAutoDiscoverySubRegistry
 
 cloud_modules = RegistryProxy('cloudconnector', ImportPathRegistry,
-                              initial=['invenio.modules.cloudconnector'])
+                              initial=['invenio_cloudconnector'])
 
 fsopeners = RegistryProxy('cloudconnector.fsopeners',
                           ModuleAutoDiscoverySubRegistry,

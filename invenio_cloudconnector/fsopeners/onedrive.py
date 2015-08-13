@@ -27,13 +27,13 @@ to be a real web site e.g. "https://invenio.com" and not localhost.
 """
 
 from fs.errors import ResourceNotFoundError
+from invenio_accounts.models import User
 
 from invenio.base.globals import cfg
 from invenio.ext.fs.cloudfs.onedrivefs import OneDriveFS
 from invenio.ext.sqlalchemy import db
-from invenio_accounts.models import User
-from invenio.modules.cloudconnector.errors import (CloudRedirectUrl,
-                                                   ErrorBuildingFS)
+
+from ..errors import CloudRedirectUrl, ErrorBuildingFS
 
 
 class Factory(object):
