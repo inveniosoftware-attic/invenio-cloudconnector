@@ -27,7 +27,7 @@ from flask_breadcrumbs import default_breadcrumb_root, register_breadcrumb
 from flask_login import login_required
 from flask_menu import register_menu
 
-from invenio.base.i18n import _
+from invenio_base.i18n import _
 
 from .config import CLOUDCONNECTOR_SERVICE_NAME_MAPPING
 from .errors import CloudRedirectUrl

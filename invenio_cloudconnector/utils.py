@@ -26,7 +26,7 @@ from flask.helpers import url_for
 from flask_login import current_user
 from werkzeug.utils import import_string
 
-from invenio.base.globals import cfg
+from invenio_base.globals import cfg
 
 from .registry import fsopeners
 

@@ -49,7 +49,7 @@ def upload(service, src, dest, user=None):
 
 def main():
     """Execute script."""
-    from invenio.base.factory import create_app
+    from invenio_base.factory import create_app
     app = create_app()
     manager.app = app
     manager.run()

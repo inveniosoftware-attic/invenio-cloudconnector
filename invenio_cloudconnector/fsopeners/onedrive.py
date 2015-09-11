@@ -29,7 +29,7 @@ to be a real web site e.g. "https://invenio.com" and not localhost.
 from fs.errors import ResourceNotFoundError
 from invenio_accounts.models import User
 
-from invenio.base.globals import cfg
+from invenio_base.globals import cfg
 from invenio.ext.fs.cloudfs.onedrivefs import OneDriveFS
 from invenio.ext.sqlalchemy import db
 

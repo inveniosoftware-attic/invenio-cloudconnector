@@ -23,7 +23,7 @@ from __future__ import unicode_literals
 
 from werkzeug import secure_filename
 
-from invenio.base.config import CFG_SITE_NAME
+from invenio_base.config import CFG_SITE_NAME
 
 # General configuration
 CLOUDCONNECTOR_ROWS_PER_PAGE = 10
