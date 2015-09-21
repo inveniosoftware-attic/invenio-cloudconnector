@@ -55,7 +55,7 @@ from flask import url_for
 from invenio_oauthclient.models import RemoteToken
 from invenio_oauthclient.views.client import oauth
 
-from invenio.ext.fs.cloudfs.googledrivefs import GoogleDriveFS
+from invenio_ext.fs.cloudfs.googledrivefs import GoogleDriveFS
 
 from ..errors import CloudRedirectUrl
 

@@ -21,7 +21,7 @@
 
 from flask_registry import ImportPathRegistry, RegistryProxy
 
-from invenio.ext.registry import ModuleAutoDiscoverySubRegistry
+from invenio_ext.registry import ModuleAutoDiscoverySubRegistry
 
 cloud_modules = RegistryProxy('cloudconnector', ImportPathRegistry,
                               initial=['invenio_cloudconnector'])
