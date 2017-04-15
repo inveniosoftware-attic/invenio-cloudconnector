@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of Invenio.
-# Copyright (C) 2013, 2014 CERN.
+# Copyright (C) 2013, 2014, 2015 CERN.
 #
 # Invenio is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License as
@@ -30,8 +30,8 @@ from fs.errors import ResourceNotFoundError
 from invenio_accounts.models import User
 
 from invenio_base.globals import cfg
-from invenio.ext.fs.cloudfs.onedrivefs import OneDriveFS
-from invenio.ext.sqlalchemy import db
+from invenio_ext.fs.cloudfs.onedrivefs import OneDriveFS
+from invenio_ext.sqlalchemy import db
 
 from ..errors import CloudRedirectUrl, ErrorBuildingFS
 

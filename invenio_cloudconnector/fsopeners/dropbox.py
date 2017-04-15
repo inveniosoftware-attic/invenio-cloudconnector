@@ -55,7 +55,7 @@ from fs.errors import ResourceNotFoundError
 from invenio_oauthclient.models import RemoteToken
 from invenio_oauthclient.views.client import oauth
 
-from invenio.ext.fs.cloudfs.dropboxfs import DropboxFS
+from invenio_ext.fs.cloudfs.dropboxfs import DropboxFS
 
 from ..errors import CloudRedirectUrl
 

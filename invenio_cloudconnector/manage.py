@@ -19,7 +19,7 @@
 
 """Manage cloudconnector module."""
 
-from invenio.ext.script import Manager
+from invenio_ext.script import Manager
 
 manager = Manager(usage=__doc__)
 
@@ -28,8 +28,8 @@ manager = Manager(usage=__doc__)
 @manager.option("-u", "--user", dest="user")
 def upload(service, src, dest, user=None):
     """Upload a file."""
-    from invenio.ext.login import login_user, logout_user
-    from invenio.ext.sqlalchemy import db
+    from invenio_ext.login import login_user, logout_user
+    from invenio_ext.sqlalchemy import db
 
     from invenio_accounts.models import User
     from . import utils
